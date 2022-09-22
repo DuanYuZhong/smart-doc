@@ -587,6 +587,7 @@ public class DocUtil {
             case "treeset":
                 return "array";
             case "java.util.byte":
+            case "java.lang.byte":
             case "byte":
             case "java.lang.integer":
             case "integer":
@@ -601,6 +602,7 @@ public class DocUtil {
             case "java.lang.float":
             case "float":
             case "bigdecimal":
+            case "java.math.bigdecimal":
             case "int64":
             case "biginteger":
                 return "number";

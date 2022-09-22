@@ -51,11 +51,11 @@ public class ApiDocTest {
         config.setMd5EncryptedHtmlName(true);
         //不指定SourcePaths默认加载代码为项目src/main/java下的
         config.setSourceCodePaths(
-                SourceCodePath.builder().setDesc("本项目代码")
-                        .setPath("")
+//                SourceCodePath.builder().setDesc("本项目代码")
+//                        .setPath("")
 
                 //SourcePath.path().setPath("F:\\Personal\\project\\smart\\src\\main\\java")
-                //SourcePath.path().setDesc("加载项目外代码").setPath("E:\\ApplicationPower\\ApplicationPower\\Common-util\\src\\main\\java")
+                SourceCodePath.builder().setDesc("加载项目外代码").setPath("\\Users\\duanyu\\projects\\cosfo-manage\\src\\main\\java")
         );
 //        config.setPackageFilters("com.power.doc.dubbo.*");
         config.setPackageFilters("r");
@@ -106,9 +106,9 @@ public class ApiDocTest {
         long start = System.currentTimeMillis();
 
         //TornaBuilder.buildApiDoc(config);
-        //OpenApiBuilder.buildOpenApi(config);
+        OpenApiBuilder.buildOpenApi(config);
        // HtmlApiDocBuilder.buildApiDoc(config);
-        RpcTornaBuilder.buildApiDoc(config);
+//        RpcTornaBuilder.buildApiDoc(config);
         //TornaBuilder.buildApiDoc(config);
         //RpcTornaBuilder.buildApiDoc(config);
 //        TornaBuilder.buildApiDoc(config);
