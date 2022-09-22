@@ -587,13 +587,13 @@ public class DocUtil {
             case "treeset":
                 return "array";
             case "java.util.byte":
-            case "java.lang.byte":
             case "byte":
             case "java.lang.integer":
             case "integer":
             case "int":
             case "short":
             case "java.lang.short":
+            case "int8":
             case "int32":
                 return "integer";
             case "double":
@@ -605,6 +605,7 @@ public class DocUtil {
             case "java.math.bigdecimal":
             case "int64":
             case "biginteger":
+            case "number":
                 return "number";
             case "java.lang.boolean":
             case "boolean":

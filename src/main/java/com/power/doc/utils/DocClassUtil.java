@@ -223,6 +223,7 @@ public class DocClassUtil {
             case "treeset":
                 return "array";
             case "java.util.byte":
+            case "java.lang.byte":
             case "byte":
                 return "int8";
             case "java.lang.integer":
