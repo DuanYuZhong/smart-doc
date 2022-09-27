@@ -47,7 +47,7 @@ public class ApiDocTest {
 
         config.setCreateDebugPage(false);
         config.setAllInOne(true);
-        config.setOutPath("D:\\md3");
+        config.setOutPath("/");
         config.setMd5EncryptedHtmlName(true);
         //不指定SourcePaths默认加载代码为项目src/main/java下的
         config.setSourceCodePaths(
@@ -55,10 +55,10 @@ public class ApiDocTest {
 //                        .setPath("")
 
                 //SourcePath.path().setPath("F:\\Personal\\project\\smart\\src\\main\\java")
-                SourceCodePath.builder().setDesc("加载项目外代码").setPath("\\Users\\duanyu\\projects\\cosfo-manage\\src\\main\\java")
+                SourceCodePath.builder().setDesc("加载项目外代码").setPath("/Users/duanyu/projects/tms/web/src/main/java")
         );
-//        config.setPackageFilters("com.power.doc.dubbo.*");
-        config.setPackageFilters("r");
+        config.setPackageFilters("net.summerfarm.tms.controller.*");
+//        config.setPackageFilters("r");
 
         config.setDataDictionaries(
                 ApiDataDictionary.builder().setTitle("订单字典").setEnumClass(OrderEnum.class).setCodeField("code").setDescField("desc")
