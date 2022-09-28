@@ -118,6 +118,13 @@
         </plugins>
         <finalName>smart-doc</finalName>
     </build>
+    <distributionManagement>
+        <repository>
+            <id>releases</id>
+            <name>Deploy Server</name>
+            <url>/Users/duanyu/Desktop</url>
+        </repository>
+    </distributionManagement>
 <!--    <profiles>-->
 <!--        <profile>-->
 <!--            <id>release</id>-->
